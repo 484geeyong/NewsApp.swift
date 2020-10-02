@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-Tc-3wW">
+                                <rect key="frame" x="0.0" y="37" width="414" height="825"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Type1" rowHeight="84" id="nhi-g9-iPD" customClass="Type1" customModule="newsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nhi-g9-iPD" id="9Jf-yi-adA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61M-mc-RMt">
+                                                    <rect key="frame" x="20" y="11" width="374" height="62"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="61M-mc-RMt" firstAttribute="top" secondItem="9Jf-yi-adA" secondAttribute="topMargin" id="3hc-Mb-KXw"/>
+                                                <constraint firstItem="61M-mc-RMt" firstAttribute="bottom" secondItem="9Jf-yi-adA" secondAttribute="bottomMargin" id="VUQ-J6-sbr"/>
+                                                <constraint firstItem="61M-mc-RMt" firstAttribute="trailing" secondItem="9Jf-yi-adA" secondAttribute="trailingMargin" id="fYr-1s-MrR"/>
+                                                <constraint firstItem="61M-mc-RMt" firstAttribute="leading" secondItem="9Jf-yi-adA" secondAttribute="leadingMargin" id="qyO-BE-g7T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="LabelText" destination="61M-mc-RMt" id="5cq-0Q-Ahw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b7J-Tc-3wW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mzd-pc-wLb"/>
+                            <constraint firstItem="b7J-Tc-3wW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kQo-1O-m0u"/>
+                            <constraint firstItem="b7J-Tc-3wW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="37" id="nMt-xI-ehn"/>
+                            <constraint firstItem="b7J-Tc-3wW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ph9-WH-I65"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TableViewMain" destination="b7J-Tc-3wW" id="sEK-JX-Uqi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.68115942028987" y="273.88392857142856"/>
+        </scene>
+    </scenes>
+</document>
